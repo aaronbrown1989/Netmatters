@@ -356,23 +356,22 @@ small {
   position: relative;
 }
 
-.main-bg-img {
+/* .main-bg-img {
   display: block;
   background: url("../img/netmatters-main.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   padding: 260px 0;
-}
+} */
 
 .web-design-main {
   display: flex;
   max-width: 60%;
   margin: auto;
-  color: #fff;
+
   flex-direction: column;
   align-items: flex-start;
-
 }
 
 .main-img-header {
@@ -381,6 +380,7 @@ small {
   font-size: 3rem;
   margin: 0 0 25px;
   z-index: 3;
+  color: #fff;
 }
 
 .main-img-text {
@@ -390,6 +390,7 @@ small {
   margin: 0 0 35px;
   max-width: 40%;
   z-index: 3;
+  color: #fff;
 }
 
 .main-img-btn {
