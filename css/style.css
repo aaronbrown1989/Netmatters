@@ -28,6 +28,10 @@ img {
   vertical-align: middle;
 }
 
+a:hover{
+  text-decoration: none;
+}
+
 footer,
 footer a {
   background-color: #333645;
@@ -36,6 +40,7 @@ footer a {
 
 footer a:hover{
   text-decoration: underline;
+  color: #fff;
 }
 
 footer ul li {
@@ -94,6 +99,12 @@ small {
 .btn-contact-us {
   color: #fff;
   margin: 10px;
+}
+
+.btn-support:hover,
+.btn-contact-us:hover {
+  color: #fff;
+  filter: brightness(90%);
 }
 
 .btn-support {
@@ -356,20 +367,20 @@ small {
   position: relative;
 }
 
-/* .main-bg-img {
+.img-cover {
   display: block;
-  background: url("../img/netmatters-main.jpg");
+  height: 730px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 260px 0;
-} */
+}
 
-.web-design-main {
+.banner-info {
+  position: relative;
+  top: 30%;
   display: flex;
   max-width: 60%;
   margin: auto;
-
   flex-direction: column;
   align-items: flex-start;
 }
@@ -393,8 +404,12 @@ small {
   color: #fff;
 }
 
-.main-img-btn {
+.main-img-button {
   display: block;
+}
+
+.main-img-button:hover {
+  color: white;
 }
 
 .lg-btn {
@@ -408,14 +423,8 @@ small {
   z-index: 3;
 }
 
-.main-bg-img::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: linear-gradient(to left, rgba(0,0,0,0) 25%, rgba(0,0,0,1) 100%);
+.slick-dots li button:before {
+  font-size: 10px
 }
 
 .services {
@@ -631,6 +640,11 @@ small {
   text-align: center;
 }
 
+.culture-btn:hover{
+  color: #333645;
+  filter: brightness(90%)
+}
+
 .articles {
   display: flex;
   flex-wrap: wrap;
@@ -672,6 +686,7 @@ small {
 .link-guides:hover,
 .link-careers:hover{
   text-decoration: underline;
+  color: #fff;
 }
 
 .articles hr {
@@ -745,9 +760,9 @@ small {
 .guide-btn:hover,
 .news-btn:hover,
 .careers-btn:hover,
-.main-img-button:hover,
-.culture-btn:hover {
+.main-img-button:hover {
   filter: brightness(90%);
+  color: #fff
 }
 
 .careers-btn {
@@ -960,18 +975,22 @@ small {
 
 .facebook-link:hover {
   background-color: #3b5998;
+  color: #fff;
 }
 
 .twitter-link:hover {
   background-color: #00aced;
+  color: #fff;
 }
 
 .googleplus-link:hover {
   background-color: #dd4b39;
+  color: #fff;
 }
 
 .linkedin-link:hover {
   background-color: #007bb6;
+  color: #fff;
 }
 
 .clearfix::after {
