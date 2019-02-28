@@ -5,7 +5,9 @@ Cookie pop up (https://www.jqueryscript.net/other/Cookie-Consent-Notice-Bootstra
 plug in slick into site - added slick to project and linked to main html
 Add html for slick. - done
 style slick in style of netmatters - done
-plug in menu into site
-style menu in style of netmatters
 plug in cookie into site - done
 style cookie in style of netmatters - done
+
+plug in menu into site - https://mmenujs.com pluged into site
+add html for the menu - html added and basic functionality working
+style menu in style of netmatters
