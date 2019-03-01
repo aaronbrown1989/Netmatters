@@ -14,17 +14,20 @@
       integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
       crossorigin="anonymous"
     >
-    <link href="css\style.css" rel="stylesheet">
+
     <link href="css\normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="js/slick/slick.css"/>
     <link rel="stylesheet" href="js/slick/slick-theme.css"/>
     <script src="js/jQuery.mmenu-master/dist/jquery.mmenu.js"></script>
-    <link rel="stylesheet" href="js/jQuery.mmenu-master/dist/jquery.mmenu.css">
+    <link rel="stylesheet" href="js/jQuery.mmenu-master/dist/jquery.mmenu.all.css">
+    <link rel="stylesheet" href="js/jQuery.mmenu-master/dist/extensions/positioning/jquery.mmenu.positioning.css">
+    <link rel="stylesheet" href="js\jQuery.mmenu-master/dist/extensions/listview/jquery.mmenu.listview.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
     <style>
       @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Shadows+Into+Light+Two|Poppins');
     </style>
+    <link href="css\style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -799,7 +802,7 @@
             </div>
           </div>
         </div>
-      </footer>
+
 
       <div class="post-footer">
         <div class="google-partner">
@@ -818,6 +821,7 @@
           <img src="https://www.netmatters.co.uk/assets/images/accreditations/norfolk-carbon-charter.jpg" alt="Norfolk Carbon Charter" class="award-img">
         </div>
       </div>
+      </footer>
       <div class="alert text-center cookiealert" role="alert">
           <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="https://cookiesandyou.com/" target="_blank">Learn more</a>
 
@@ -826,42 +830,42 @@
           </button>
       </div>
     </div>
-    <nav id="my-menu">
-        <ul>
-          <li><a href="#">TRAINING</a>
-            <ul>
-              <li><a class="Label" href="#">WEB DEVELOPER TRAINING</a></li>
-            </ul>
-          </li>
-          <li><a class="Label" href="#">OUR COMPANY</a>
-            <ul>
-              <li><a href="#">OUR CULTURE</a></li>
-              <li><a href="#">OUR OFFICE TOUR</a></li>
-              <li><a href="#">OUR TEAM</a></li>
-              <li><a href="#">OUR CAREERS</a></li>
-              <li><a href="#">OUR BENEFITS</a></li>
-            </ul>
-          </li>
-          <li><a class="Label" href="#">OUR WORK</a>
-            <ul>
-              <li><a href="#">CASE STUDIES</a></li>
-              <li><a href="#">PORTFOLIO</a></li>
-            </ul>
-          </li>
-          <li><a class="Label" href="#">OUR KNOWLEDGE</a>
-            <ul>
-              <li><a href="#">GUIDES</a></li>
-              <li><a href="#">NEWS</a></li>
-              <li><a href="#">INSIGHTS</a></li>
-              <li><a href="#">TOOLS</a></li>
-            </ul>
-          </li>
+
+
+    <nav id="my-menu" class="main-menu">
+        <ul class="menu-list">
+          <li><a class="menu-title" href="#">TRAINING</a></li>
+          <li class="menu-item"><a href="#"><i class="fas fa-angle-double-right"></i> WEB DEVELOPER TRAINING</a></li>
+          <li class="menu-section"><a class="menu-title" href="#">OUR COMPANY</a>
+          <li class="menu-item"><a href="#"><i class="fas fa-angle-double-right"></i> OUR CULTURE</a></li>
+          <li class="menu-item"><a href="#"><i class="fas fa-angle-double-right"></i> OUR OFFICE TOUR</a></li>
+          <li class="menu-item"><a href="#"><i class="fas fa-angle-double-right"></i> OUR TEAM</a></li>
+          <li class="menu-item"><a href="#"><i class="fas fa-angle-double-right"></i> OUR CAREERS</a></li>
+          <li class="menu-item"><a href="#"><i class="fas fa-angle-double-right"></i> OUR BENEFITS</a></li>
+          <li class="menu-section"><a class="menu-title" href="#">OUR WORK</a>
+          <li class="menu-item"><a href="#"><i class="fas fa-angle-double-right"></i> CASE STUDIES</a></li>
+          <li class="menu-item"><a href="#"><i class="fas fa-angle-double-right"></i> PORTFOLIO</a></li>
+          <li class="menu-section"><a class="menu-title" href="#">OUR KNOWLEDGE</a>
+          <li class="menu-item"><a href="#"><i class="fas fa-angle-double-right"></i> GUIDES</a></li>
+          <li class="menu-item"><a href="#"><i class="fas fa-angle-double-right"></i> NEWS</a></li>
+          <li class="menu-item"><a href="#"><i class="fas fa-angle-double-right"></i> INSIGHTS</a></li>
+          <li class="menu-item"><a href="#"><i class="fas fa-angle-double-right"></i> TOOLS</a></li>
         </ul>
       </nav>
     <script src="js/slick/slick.min.js"></script>
     <script>
       $(document).ready(function() {
-        $("#my-menu").mmenu();
+        $("#my-menu").mmenu({
+          navbar: {
+            add: false
+          },
+          "extensions": [
+            "position-back",
+            "position-right",
+            "pagedim-black",
+            "theme-dark"
+          ]
+        });
       });
     </script>
     <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>

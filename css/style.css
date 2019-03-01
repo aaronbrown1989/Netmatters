@@ -32,7 +32,7 @@ a:hover{
   text-decoration: none;
 }
 
-footer,
+.footer-container,
 footer a {
   background-color: #333645;
   color: #fff;
@@ -62,6 +62,28 @@ small {
 .main-logo img {
   height: auto;
   max-width: 100%;
+}
+
+
+
+.mm-panel {
+  --mm-color-background: #3D404E;
+  --mm-color-text-dimmed: #fff;
+  --mm-color-button: #fff;
+}
+
+.menu-item {
+  background-color: #333645;
+}
+
+.menu-title {
+  padding: 20px 20px;
+}
+
+
+
+.slick-arrow {
+  display: none !important;
 }
 
 .menu-btn {
