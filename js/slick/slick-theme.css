@@ -187,7 +187,7 @@
 
     width: 20px;
     height: 20px;
-    
+
     content: '•';
     text-align: center;
 
@@ -199,8 +199,6 @@
 }
 .slick-dots li.slick-active button:before
 {
-    border: 3px solid white;
-    border-radius: 50%;
     color: white;
     opacity: 1;
 }
